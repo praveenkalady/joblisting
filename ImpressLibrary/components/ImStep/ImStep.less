@@ -1,0 +1,121 @@
+.circle {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+}
+
+.circle__status--finish {
+  display: grid;
+  place-content: center;
+  border-color: #00c632;
+}
+
+.circle__status--wait {
+  color: #f49c26; // this is same color as impress primary branding but we need to hardcode this for wait status
+  border-color: currentColor;
+  rotate: 180deg;
+}
+
+// ANTD class modification
+.ant-steps-item-title {
+  font-size: 1rem;
+  color: #484d4e !important;
+  .ant-steps-item-subtitle {
+    font-weight: 500;
+  }
+}
+
+.ant-steps-small .ant-steps-item-title {
+  line-height: normal;
+}
+
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+  background-color: #00c632;
+  height: 1px;
+  width: calc(100% - 23px);
+  margin-left: 19px;
+
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-tail::after {
+  height: 1px;
+  width: calc(100% - 23px);
+  margin-left: 19px;
+}
+
+.ant-steps-dot .ant-steps-item-tail::after{
+  height: 1px;
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-tail {
+  top: 12px;
+}
+
+.ant-steps-item-container {
+  position: relative;
+}
+
+.ant-steps-dot .ant-steps-item-icon {
+  position: absolute;
+  top: -10px;
+  width: 25px;
+  height: 25px;
+  margin-left: 4.1em;
+}
+
+.ant-steps-item-title {
+  margin-top: 1em;
+}
+
+.workflow-type .circle svg{
+  width: 14px;
+  height: 14px;
+}
+.workflow-type .circle path{
+  fill: #fff;
+}
+.workflow-type .circle{
+  width: 14px;
+  height: 14px;
+  background-color: #00ce71;
+}
+.workflow-type .circle svg{
+  width: 14px;
+  height: 14px;
+  color: #fff;
+}
+.workflow-type .ant-steps-item .ant-steps-item-tail::after{
+  width: 100%;
+  margin-left: 6px;
+  background-color: var(--im-primary-color);
+}
+.workflow-type .ant-steps-item .ant-steps-item-tail{
+  top: 47px;
+}
+.workflow-type .ant-steps-item-title{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+.workflow-type .ant-steps-item .ant-steps-item-content{
+  width: 94px ;
+  margin: 0;
+  padding: 0 14px;
+}
+.workflow-type  .ant-steps-item-icon{
+  margin-left: 42px;
+  top: 40px;
+  width: 14px;
+  height: 14px;
+}
+.workflow-type .ant-steps-item-title .ant-steps-item-subtitle{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9B9B9B;
+}
+.workflow-type .ant-steps-item-tail{
+  margin-left: 49px;
+}

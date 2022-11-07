@@ -1,0 +1,15 @@
+.ant-checkbox-wrapper span {
+  color: #484d4e;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.ant-checkbox-inner {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #979797;
+  border-radius: 3px;
+  background-color: #ffffff;
+}

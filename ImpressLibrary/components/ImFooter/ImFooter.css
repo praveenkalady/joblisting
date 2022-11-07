@@ -1,0 +1,81 @@
+#im-footer {
+  --navbar-active-expanded-width: 250px;
+  --navbar-active-collapsed-width: 70px;
+}
+
+#im-footer.footer-div {
+  position: fixed;
+  bottom: 0px;
+  background: white;
+  max-height: 80px;
+  left: var(--navbar-active-expanded-width);
+  width: calc(100% - var(--navbar-active-expanded-width));
+  padding: 18px 55px;
+  box-shadow: 0 -1.5px 44px 0 rgba(0, 0, 0, 0.07);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+#wrapper.active #im-footer.footer-div {
+  left: 0px;
+  width: 100%;
+}
+
+#wrapper.active.is-collapsed #im-footer.footer-div {
+  left: var(--navbar-active-collapsed-width);
+  width: calc(100% - var(--navbar-active-collapsed-width));
+}
+
+#im-footer .selection-text {
+  color: #455DA0;
+  cursor: pointer;
+}
+
+#im-footer .selection-text:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+#im-footer .selection-text {
+  color: #455DA0;
+  cursor: pointer;
+}
+
+#im-footer .ant-btn {
+  padding: 7px 9px;
+  line-height: 0px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+#im-footer .ant-btn svg {
+  margin-left: 5px;
+}
+
+#im-footer .action-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#im-footer .action-buttons .ImDropdown path{
+  fill: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  #im-footer.footer-div {
+    width: 100%;
+    left: 0;
+    max-height: 100%;
+  }
+
+  #wrapper.active #im-footer.footer-div {
+    left: var(--navbar-active-expanded-width);
+    width: calc(100% - var(--navbar-active-expanded-width));
+  }
+}

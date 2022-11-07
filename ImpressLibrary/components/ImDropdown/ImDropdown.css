@@ -1,0 +1,49 @@
+.selection-dropdown {
+  display: flex;
+  color: #005cc9;
+  font-size: 14px;
+  line-height: 16px;
+}
+.selection-dropdown span {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ant-select-dropdown .rc-virtual-list .rc-virtual-list-scrollbar-thumb {
+  display: none !important;
+}
+
+.ant-select-dropdown .rc-virtual-list-holder {
+  overflow-y: auto !important;
+}
+
+.ant-dropdown-menu {
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.ant-dropdown-menu > .selection-dropdown {
+  position: sticky;
+  background-color: white;
+  bottom: 0;
+}
+
+.ant-dropdown-menu-item:hover {
+  background: var(--im-primary-color-shade-1);
+}
+
+.ant-dropdown-search svg {
+  height: 15px;
+}
+
+.ant-dropdown-search .ant-input {
+  min-height: 2rem;
+}
+
+.ant-no-results {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  color: #888;
+}

@@ -1,0 +1,23 @@
+@import "../../theme.less";
+
+.ant-input-group-wrapper {
+  border: 1px solid @im-grey;
+  border-radius: @im-border-radius;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.04);
+  &:hover,
+  &:focus-within {
+    border-color: @im-primary-color;
+  }
+  .ant-input {
+    border: 0;
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.ant-btn.ant-btn-icon-only.ant-input-search-button {
+  border: 0;
+  cursor: default;
+}

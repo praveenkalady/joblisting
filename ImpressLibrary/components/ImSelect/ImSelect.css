@@ -1,0 +1,15 @@
+.ImSelect {
+  width: fit-content;
+}
+.ant-select-dropdown {
+  pointer-events: all !important;
+}
+.ant-slide-up-enter {
+  display: block;
+}
+.ant-slide-up-leave {
+  display: none;
+}
+.ImSelect .ant-select-single .ant-select-selector {
+  align-items: center;
+}

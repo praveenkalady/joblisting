@@ -1,0 +1,13 @@
+.ant-picker-footer a.ant-picker-now-btn , .ant-picker-footer a.ant-picker-now-btn:hover{
+    color: #1890ff;
+    cursor: pointer;
+}
+
+.ant-picker-ok > button.ant-btn > span {
+    font-size: 0;
+  }
+  
+  .ant-picker-ok > button.ant-btn > span:after {
+    content: "OK";
+    font-size: 14px; 
+  }

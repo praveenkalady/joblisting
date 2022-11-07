@@ -1,0 +1,15 @@
+.ant-btn-primary,
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: var(--im-primary-color);
+  color: #ffffff;
+}
+
+.ant-btn {
+  height: auto;
+  padding: 6px 44px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px;
+  border-radius: 18.5px;
+}

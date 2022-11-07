@@ -1,0 +1,49 @@
+
+
+.im-toast.ant-notification-notice-success {
+  --current-color: #00c151;
+}
+
+/* .ant-notification .ant-notification-notice-error { */
+.im-toast.ant-notification-notice-error {
+  --current-color: #ed1c24;
+}
+
+.im-toast.ant-notification-notice-warning  {
+  --current-color: #ffa01c;
+}
+
+.im-toast {
+  --current-color: #005dd0;
+  border: solid 1px var(--current-color);
+  border-left-width: 5px;
+}
+
+.im-toast .ant-notification-notice-message {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: var(--current-color);
+}
+
+.im-toast .ant-notification-notice-icon {
+  left: 15px;
+}
+.im-toast .ant-notification-notice-icon, .im-toast .ant-notification-notice-close {
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 0.5em;
+}
+
+.ant-notification-notice-description {
+  margin-right: 25px;
+}
+.ant-notification {
+  z-index: 99999 !important;
+}
+@media screen and (max-width : 400px) {
+  .im-toast{
+    width: 85%;
+    max-width: 90% !important;
+  }
+}

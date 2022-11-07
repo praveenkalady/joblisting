@@ -1,0 +1,233 @@
+.im-donut {
+  width: 100%;
+}
+.c3 svg {
+  font-family: "Roboto", sans-serif;
+}
+.main-tool {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 30px;
+}
+.main-tool::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  transform: rotate(-27deg);
+}
+.main-tool::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  transform: rotate(2deg);
+}
+.main-tool label {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  color: #484d4e;
+}
+.main-tool span {
+  font-size: 13px;
+  color: #9b9b9b;
+}
+.im-bar {
+  padding: 20px 0;
+  width: 100%;
+}
+.im-bar tspan {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  fill: #888888;
+}
+.im-bar .c3-axis-y-label,
+.im-bar .c3-axis-x-label {
+  color: #484d4e;
+  font-weight: 500;
+}
+
+.im-bar .c3-axis-x-label {
+  font-size: 10px;
+  transform: translateY(10px);
+}
+.im-bar .c3-axis-y-label {
+  font-size: 12px;
+  transform: translateX(-14px) rotate(-90deg);
+}
+.im-bar .c3-grid line {
+  stroke: #dedede;
+}
+.im-bar .c3-ygrid {
+  stroke-dasharray: 1 3;
+}
+.im-bar .c3 path,
+.im-bar .c3 line {
+  stroke: #dedede;
+}
+.c3-legend-item {
+  color: #484d4e;
+  font-size: 14px;
+  transform: translateY(10px);
+}
+.im-bar .c3-legend-item {
+  transform: translateY(8px);
+}
+.im-bar .c3-tooltip {
+  background-color: #000;
+  opacity: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 10px;
+  display: block;
+}
+
+.im-bar .c3-tooltip tr {
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.im-bar .c3-tooltip th,
+.im-bar .c3-tooltip td {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+}
+.im-bar .c3-tooltip td.name {
+  display: none;
+  align-items: center;
+  padding-right: 5px;
+}
+.bar-stacked.im-bar .c3-tooltip td.name {
+  display: flex;
+}
+.im-funnel .funnel {
+  width: max-content;
+  left: 50%;
+  transform: translateX(-40%);
+  padding: 30px 0;
+  z-index: 9;
+  position: relative;
+}
+.im-funnel {
+  position: relative;
+  width: 100%;
+}
+.funnel-wrap {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.small .funnel-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.small .funnel-wrap .funnel {
+  left: initial;
+}
+.im-funnel p {
+  width: calc(100% - 2%);
+  height: 1px;
+  position: absolute;
+  left: 2%;
+  margin: 0 auto;
+  border-top: 1px solid #dedede;
+  z-index: 9;
+}
+.show-on-hover{
+  cursor: pointer;
+}
+.funnel-wrap .value-text{
+  left: 49%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 200px;
+  
+}
+.funnel-wrap .value-text em{
+  font-style: normal;
+  border-radius: 2px;
+  background-color: rgba(0,0,0, 0.52);
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 10px;
+  color: #FFFFFF;
+  padding: 2px 4px;
+  width: max-content;
+  min-width: 30px;
+}
+.show-on-hover:hover{
+  background-color: rgba(0,0,0, 0.57);
+}
+.show-on-hover:hover span{
+  color: #fff;
+}
+.show-on-hover:hover label{
+   display: block;
+}
+.im-funnel p label{
+ position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 21px;
+    display: none;
+    text-align: center;
+}
+.im-funnel p span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  left: 10px;
+  color: #828282;
+  font-size: 10px;
+  line-height: 11px;
+  z-index: 99;
+}
+.im-funnel .funnel-wrap::before {
+  content: "";
+  width: 1px;
+  height: calc(100% - 60px);
+  background: #dedede;
+  position: absolute;
+  left: 2%;
+  top: 30px;
+}
+.im-funnel h1 {
+  transform: rotate(-90deg);
+  transform-box: view-box;
+  transform-origin: left;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 11px;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+}
+.empty-chart{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f49c26;
+}

@@ -1,0 +1,22 @@
+.ant-input-group.ant-input-group-compact > *:not(:last-child) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.ant-input-group .ant-input-group-compact .ant-btn .ant-btn-icon-only span[aria-label="copy"] {
+    padding: 10px 7px;
+}
+
+.ant-input-group.ant-input-group-compact {
+    width: fit-content;
+}
+
+.ant-input-group.ant-input-group-compact > *:last-child, 
+.ant-input-group.ant-input-group-compact > .ant-select:last-child > 
+.ant-select-selector, .ant-input-group.ant-input-group-compact > 
+.ant-cascader-picker:last-child .ant-input, 
+.ant-input-group.ant-input-group-compact > 
+.ant-cascader-picker-focused:last-child .ant-input
+{
+    padding: 6px 0;
+}

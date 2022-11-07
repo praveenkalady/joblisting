@@ -1,0 +1,4 @@
+export const INFO_TYPE = "INFO_TYPE";
+export const DELETE_TYPE = "DELETE_TYPE";
+export const SINGLE_TYPE = "SINGLE_TYPE";
+export const ACCEPTED_TYPES = [INFO_TYPE, DELETE_TYPE, SINGLE_TYPE];

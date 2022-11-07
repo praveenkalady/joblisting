@@ -1,0 +1,12 @@
+.ant-collapse{
+    background: inherit;
+}
+.ant-collapse-header{
+    color: #030303;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding: 12px 0 !important;
+}
