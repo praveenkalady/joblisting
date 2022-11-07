@@ -14,6 +14,8 @@ const Home = ({ jobPosts }) => {
             title={jobPost.title}
             summary={jobPost.summary}
             jobTags={jobPost.jobTags}
+            fullString={jobPost.jobLocation.fullString}
+            id={jobPost.id}
           />
         ))}
       </ul>

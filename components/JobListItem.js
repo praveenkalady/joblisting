@@ -1,12 +1,16 @@
 import React from 'react';
+import Link from "next/link"
 import { ImIcons,ImComponents } from "../ImpressLibrary/Library";
 
 const JobListItem = ({
     title,
     summary,
-    jobTags
+    jobTags,
+    fullString,
+    id
 }) => {
   return (
+    <Link href={`/${id}/`}>
     <li
     className={"job__listing--public-list-item"}
   >
@@ -17,7 +21,7 @@ const JobListItem = ({
           <div>
             <ImIcons name={"locationIcon"} />
           </div>
-          {/* <p>{fullString}</p> */}
+          <p>{fullString}</p>
         </label>
       </div>
       <div className={"header__info--right"}>
@@ -54,6 +58,7 @@ const JobListItem = ({
       </div>
     </div>
   </li>
+  </Link>
   )
 }
 

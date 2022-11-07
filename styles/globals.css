@@ -19,7 +19,7 @@ body {
 
 .job__listing--public-list-item .header {
   padding: 23px 16px 15px 16px;
-  border-bottom: 1px solid var(--joblisting-grey);
+  border-bottom: 1px solid #E3E3E3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,7 +186,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: var(--joblisting-body);
+  background-color: #FAFAFA;
   padding-top: 17px;
   padding-bottom: 17px;
 }
@@ -198,3 +198,90 @@ body {
 .job__listing--hide--scrollbar .job__listing--list-search-container {
   margin-top: -8px;
 }
+
+.job__listing--job-details-container {
+  background: var(--joblisting-white);
+  list-style: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.job__listing--job-details-container .header {
+  padding: 45px 16px 15px 16px;
+  border-bottom: 1px solid var(--joblisting-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job__listing--job-details-container .header .header__info--left h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--joblisting-light-black);
+  margin-right: 1rem;
+}
+
+.job__listing--job-details-container .header .header__info--left label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.job__listing--job-details-container .header .header__info--left label p {
+  color: var(--joblisting-light-font);
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: break-all;
+}
+
+.job__listing--job-details-container .header .header__info--right .orange__variant {
+  border: 1px solid var(--joblisting-orange);
+  color: var(--joblisting-orange);
+}
+
+.job__listing--job-details-container .footer {
+  padding: 17px 16px 23px 20px;
+}
+
+.job__listing--job-details-container .footer .footer__extra--info  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job__listing--job-details-container .footer .footer__extra--info label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--joblisting-light-font);
+}
+
+.job__listing--job-details-container .footer .footer__extra--info p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--joblisting-light-black);
+}
+
+.job__listing--job-details-container .job__listing--content-container {
+  padding: 17px 24px;
+}
+
+.job__listing--job-details-container .job__listing--content-container div:nth-child(1) p {
+  margin: 0;
+}
+
+.job__listing--job-details-container .job__listing--content-container {
+  max-height: 65vh;
+  overflow: clip;
+  overflow-y: auto;
+}
+
+
